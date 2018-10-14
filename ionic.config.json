@@ -1,0 +1,7 @@
+{
+  "name": "sporttree_Pro",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
