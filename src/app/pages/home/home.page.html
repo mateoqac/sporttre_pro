@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scrollY="false">
+  <section class="start-container">
+      <div class="tier header">
+          <!-- <div class="logo logo-left">
+              <img ng-src="assets/img/interface/femex-logo-badge.svg" >
+          </div>
+          <div class="logo logo-right">
+              <img ng-src="assets/img/interface/femex-logo-badge.svg" >
+          </div> -->
+          <!-- <div class="profile">
+              <div class="profile-picture big-profile-picture">
+                  <img ng-src="{{user.thumb}}">
+              </div>
+              <div class="title">Futbolizador</div>
+              <div class="name">{{user.displayName}}</div>
+          </div> -->
+          <div class="brand">
+              <div class="brand-picture">
+                  <img src="assets/img/logos/futbolimetro-logo-primary.svg">
+              </div>
+              <!-- <div class="title">{{translations.getTranslation("Brand-Name")}}</div> -->
+              <!-- <div class="name">{{user.displayName}}</div> -->
+          </div>
+          <div class="bottom-arrow"></div>
+      </div>
+      <div class="tier">
+          <div class ="row row-center">
+              <div class="col col-50 text-center" ng-click="newClientScreen(screenTemplateType = 1)">
+                  <div class="home-button sa">
+                      <img src="assets/img/interface/home-icon-screen-athlete.svg" >
+                      <!-- <p class="home-label">{{translations.getTranslation("Screen_Athlete")}}</p> -->
+                  </div>
+              </div>
+              <div class="col col-50 text-center" ng-click="viewScreeningEvents()">
+                  <div class="home-button sg">
+                      <img src="assets/img/interface/home-icon-screen-group.svg" >
+                      <!-- <p class="home-label">{{translations.getTranslation("Screen_Team")}}</p> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="tier">
+           <div class="row row-center">
+              <div class="col text-center" ng-click="viewClients()">
+                  <div class="home-button ma">
+                      <img src="assets/img/interface/home-icon-manage-athlete.svg" >
+                      <!-- <p class="home-label">{{translations.getTranslation("Manage_Athletes")}}</p> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </section>
+</ion-content>

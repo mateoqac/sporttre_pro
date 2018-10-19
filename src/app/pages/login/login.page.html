@@ -1,0 +1,46 @@
+<ion-content scrollY="{{ionContentCanScroll}}" >
+    <section class="splash-page pane"> 
+        <div class="vertical-align-content">
+            <div class="padding logo animated fadeIn text-glow" >
+                <img src="assets/img/logos/futbolimetro-logo-primary.svg" />
+            </div>
+            <div >
+                <form #loginForm="ngForm"
+                    (ngSubmit)="onSubmit(loginForm.value)" >
+                    <div class="list list-inset margin-no-bottom-x animated fadeIn anim-delay-0_5"> 
+                        <ion-item>
+                            <ion-icon name="person" slot="start" ></ion-icon>
+                            <ion-input type="text" autocorrect="off" autocapitalize="none" placeholder="{{ 'Username' | translate }}" ngModel name="username" required></ion-input>
+                        </ion-item>
+                        
+                        <ion-item>
+                            <ion-icon name="lock" slot="start"></ion-icon>
+                            <ion-input type="{{passwordInputType}}" placeholder="{{ 'Password' | translate }}" ngModel name="password" required></ion-input>
+                            <ion-icon name="{{showPasswordIcon}}" (click)="showPass()" slot="end"></ion-icon>
+                        </ion-item>
+                    </div>
+
+                    <div class="padding">
+                        <button class="button button-block button-calm" ion-ripple type="submit" [disabled]="!loginForm.valid">{{ 'Sign_In' | translate | uppercase }}</button>
+                    </div>
+                </form>
+                <div class="row row-center padding">
+                    <div class="col-50">
+                        <!-- <button class="button button-clear button-light" type="button" ng-click="goToOnBoarding()">
+                            {{translations.getTranslation("Not_Certified?")}}
+                        </button> -->
+                        <button class="button button-clear button-light" type="button" (click)="goToJoinEvent()">
+                            {{ 'Join_Event' | translate}}
+                        </button>
+                    </div>
+                    
+                    <div class="col-50">
+                        <button class="button button-clear button-light" type="button" style="float: right;" (click)="gotoForgotPassword()">
+                            {{ 'Forgot_Password?' | translate }}
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+</ion-content>

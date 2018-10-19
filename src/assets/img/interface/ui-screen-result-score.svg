@@ -1,0 +1,27 @@
+<svg id="score-ui" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+	<defs>
+	<style>
+		
+
+	</style>
+	</defs>
+	<title>screen-result-score-ui</title>
+	<circle id="circle-base" class="score-ui-circle grey-stroke" cx="200" cy="200" r="186"/>
+	<!--<circle id="circle" class="score-ui-circle green-stroke" cx="200" cy="200" r="190"/>-->
+	<g id="levels">
+		<path id="ind-level-1" class="level" ng-class="screenResult.getLevel() >= 1 ? 'green-fill' : 'grey-fill'" d="M202,30V47a151.82,151.82,0,0,1,86.3,28l10-13.7A170,170,0,0,0,202,30Z"/>
+		<path id="ind-level-2" class="level" ng-class="screenResult.getLevel() >= 2 ? 'green-fill' : 'grey-fill'" d="M291.6,77.4a161.57,161.57,0,0,1,16.6,14.4,153,153,0,0,1,36.8,59l16.1-5.2a170.56,170.56,0,0,0-59.6-81.9Z"/>
+		<path id="ind-level-3" class="level" ng-class="screenResult.getLevel() >= 3 ? 'green-fill' : 'grey-fill'" d="M353,200a153.13,153.13,0,0,1-6.8,45.4l16.1,5.2a170.11,170.11,0,0,0,0-101.2l-16.1,5.2A153.13,153.13,0,0,1,353,200Z"/>
+		<path id="ind-level-4" class="level" ng-class="screenResult.getLevel() >= 4 ? 'green-fill' : 'grey-fill'" d="M345,249.2a151.81,151.81,0,0,1-36.8,59,150.21,150.21,0,0,1-16.6,14.4l10,13.7a170.56,170.56,0,0,0,59.6-81.9Z"/>
+		<path id="ind-level-5" class="level" ng-class="screenResult.getLevel() >= 5 ? 'green-fill' : 'grey-fill'" d="M288.3,325A152.07,152.07,0,0,1,202,353v17a168.49,168.49,0,0,0,96.3-31.3Z"/>
+		<path id="ind-level-6" class="level" ng-class="screenResult.getLevel() >= 6 ? 'green-fill' : 'grey-fill'" d="M198,370V353a151.82,151.82,0,0,1-86.3-28l-10,13.7A168.73,168.73,0,0,0,198,370Z"/>
+		<path id="ind-level-7" class="level" ng-class="screenResult.getLevel() >= 7 ? 'green-fill' : 'grey-fill'" d="M108.5,322.6a161.57,161.57,0,0,1-16.6-14.4,153,153,0,0,1-36.8-59L39,254.4a170.56,170.56,0,0,0,59.6,81.9Z"/>
+		<path id="ind-level-8" class="level" ng-class="screenResult.getLevel() >= 8 ? 'green-fill' : 'grey-fill'" d="M47,200a153.13,153.13,0,0,1,6.8-45.4l-16.1-5.2a170.11,170.11,0,0,0,0,101.2l16.1-5.2A153.13,153.13,0,0,1,47,200Z"/>
+		<path id="ind-level-9" class="level" ng-class="screenResult.getLevel() >= 9 ? 'green-fill' : 'grey-fill'" d="M55.1,150.8a151.8,151.8,0,0,1,36.8-59,150.22,150.22,0,0,1,16.6-14.4l-10-13.7a170.56,170.56,0,0,0-59.6,81.9Z"/>
+		<path id="ind-level-10" class="level" ng-class="screenResult.getLevel() >= 10 ? 'green-fill' : 'grey-fill'" d="M111.7,75A152.07,152.07,0,0,1,198,47V30a168.49,168.49,0,0,0-96.3,31.3Z"/>
+	</g>
+	<text class="score-ui-text score-ui-num-text" text-anchor="middle" transform="matrix(1 0 0 1 200 300)">
+	{{screenResult.getLevel()}}
+	</text>
+	<text class="score-ui-text" text-anchor="middle" transform="matrix(1 0 0 1 200 110)">{{::translations.getTranslation("Level").toUpperCase()}}</text>
+</svg>

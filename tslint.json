@@ -16,6 +16,11 @@
     },
     "eofline": true,
     "forin": true,
+    "import-blacklist": [
+      true,
+      "rxjs",
+      "rxjs/Rx"
+    ],
     "import-spacing": true,
     "indent": [
       true,
@@ -102,10 +107,11 @@
         "variable-declaration": "nospace"
       }
     ],
+    "typeof-compare": true,
     "unified-signatures": true,
     "variable-name": false,
     "whitespace": [
-      true,
+      false,
       "check-branch",
       "check-decl",
       "check-operator",
@@ -133,6 +139,7 @@
     "no-output-rename": true,
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
+    "component-class-suffix": true,
     "directive-class-suffix": true
   }
 }

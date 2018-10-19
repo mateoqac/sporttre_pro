@@ -2,8 +2,16 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "baseUrl": "./",
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "module": "es2015"
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
   },
   "exclude": [
     "test.ts",
